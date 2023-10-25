@@ -1,13 +1,12 @@
 <h1>Home</h1>
 
 
-<ul class="d-flex flex-direction-row flex-wrap">
+<ul class="d-flex flex-direction-row flex-wrap justify-content-center">
     <li *ngFor="let drink of drinks" class="mb-4">
         <div class="card " style="width: 18rem;">
             <img class="card-img-top" [src]="drink.strDrinkThumb" alt="Card image cap">
             <div class="card-body">
-                <h3 class="card-title">{{drink.strDrink}}</h3>
-                <p class="card-text">{{drink.strInstructionsIT}}</p>
+                <h3 class="card-title text-center">{{drink.strDrink}}</h3>
             </div>
             <div class="card-footer">
                 <button class="btn btn-primary" routerLink="/dettaglio"> Vai al dettaglio</button>

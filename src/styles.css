@@ -13,10 +13,6 @@ select.ng-invalid {
     color: red;
 }
 
-li {
-    list-style: none;
-}
-
 * {
     font-family: "Roboto", Arial, sans-serif;
     color: #616161;
@@ -42,10 +38,6 @@ router-outlet + * {
 
 h1 {
     font-size: 32px;
-}
-
-h2 {
-    font-size: 20px;
 }
 
 h1,
@@ -167,6 +159,17 @@ app-top-bar h1 {
     width: 100%;
 }
 
+li {
+    list-style: none;
+}
+
+.col li {
+    list-style: circle;
+}
+
+.col h2 {
+    color: black;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

@@ -1,1 +1,58 @@
 <h1>Dettaglio</h1>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Dettaglio</li>
+    </ol>
+</nav>
+
+
+
+
+
+
+
+<ul>
+    <li *ngFor="let drinks of drinks">
+        <div class="container-xxl ">
+            <div class="row row-cols-xxl-2 row-cols-xl-2 row-cols-lg-2">
+                <div class="col">
+                    <h2 class="text-center">{{drinks.strDrink}}</h2>
+                    <img class="img-fluid rounded mx-auto d-block" height="300" width="300" [src]="drinks.strDrinkThumb" />
+                </div>
+                <div class="col">
+                    <h2 class="text-center">Ingredienti:</h2>
+                    <ul>
+                        <li>
+                            <h3>{{drinks.strMeasure1}} {{drinks.strIngredient1}}</h3>
+                        </li>
+                        <li>
+                            <h3>{{drinks.strMeasure2}} {{drinks.strIngredient2}}</h3>
+                        </li>
+                        <li>
+                            <h3>{{drinks.strMeasure3}} {{drinks.strIngredient3}}</h3>
+                        </li>
+                        <li>
+                            <h3>{{drinks.strMeasure4}} {{drinks.strIngredient4}}</h3>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl mt-5">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h2>Istruzioni:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <p class="text-center">{{drinks.strInstructionsIT}}</p>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

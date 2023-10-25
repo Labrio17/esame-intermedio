@@ -12,12 +12,11 @@ export class DettaglioComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-        // una get verso un indirizzo che da una risposta
-        this.http
-            .get(" www.thecocktaildb.com/api/json/v1/1/lookup.php?i=15200")
-            .subscribe((response: any) => {
-                console.log(response);
-                this.drinks = response.drinks;
-            });
-    }
+ 
+         this.http.get('https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=15200').subscribe( ( res: any) => {
+           console.log(res);
+           this.drinks = res.drinks;
+         })
+}
+
 }
