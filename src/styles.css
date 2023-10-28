@@ -23,6 +23,7 @@ select.ng-invalid {
 
 body {
     margin: 0;
+    background-color: black;
 }
 
 .container {
@@ -37,7 +38,8 @@ router-outlet + * {
 /* Text */
 
 h1 {
-    font-size: 32px;
+    font-size: 50px;
+    color: orangered;
 }
 
 h1,
@@ -168,7 +170,15 @@ li {
 }
 
 .col h2 {
-    color: black;
+    color: antiquewhite;
+}
+
+li.breadcrumb-item {
+    color: #bdbdbd;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider-color: #bdbdbd;
 }
 /*
 Copyright Google LLC. All Rights Reserved.
