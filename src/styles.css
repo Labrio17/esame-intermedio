@@ -23,7 +23,7 @@ select.ng-invalid {
 
 body {
     margin: 0;
-    background-color: black;
+    background-color: #641c34;
 }
 
 .container {
@@ -39,16 +39,17 @@ router-outlet + * {
 
 h1 {
     font-size: 50px;
-    color: orangered;
 }
 
 h1,
 h2 {
     font-weight: lighter;
+    color: #cbae69;
 }
 
 p {
     font-size: 14px;
+    color: antiquewhite;
 }
 
 /* Hyperlink */
@@ -155,6 +156,13 @@ app-top-bar h1 {
 
 .card {
     min-height: 100%;
+    border: 3px solid #cbae69;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .card-footer .btn {
@@ -169,10 +177,6 @@ li {
     list-style: circle;
 }
 
-.col h2 {
-    color: antiquewhite;
-}
-
 li.breadcrumb-item {
     color: #bdbdbd;
 }
@@ -180,6 +184,16 @@ li.breadcrumb-item {
 .breadcrumb {
     --bs-breadcrumb-divider-color: #bdbdbd;
 }
+
+.card-body,
+.card-footer {
+    background-color: #fffdd0;
+}
+
+h3 {
+    color: antiquewhite;
+}
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
